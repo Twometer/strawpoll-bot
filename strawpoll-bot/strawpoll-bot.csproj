@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8B80B8B6-1ECE-4BFD-8B3E-5FC9F8E2D59B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>spb</RootNamespace>
+    <RootNamespace>StrawpollBot</RootNamespace>
     <AssemblyName>strawpoll-bot</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CLI\CommandLineParser.cs" />
+    <Compile Include="CLI\UserInput.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Voting\VoteExecutor.cs" />

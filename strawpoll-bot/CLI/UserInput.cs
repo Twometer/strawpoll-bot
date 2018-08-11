@@ -1,22 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 
-namespace spb.CLI
+namespace StrawpollBot.CLI
 {
     internal class UserInput
     {
-        private string pollId;
-        private int choiceIdx;
-        private int voteCount;
+        public string PollId { get; }
+        public int ChoiceIdx { get; }
+        public int VoteCount { get; }
+        public FileInfo ProxyList { get; }
 
-        public UserInput(string pollId, int choiceIdx, int voteCount)
+        public UserInput(string pollId, int choiceIdx, int voteCount, FileInfo proxyList)
         {
-            this.pollId = pollId;
-            this.choiceIdx = choiceIdx;
-            this.voteCount = voteCount;
+            PollId = pollId;
+            ChoiceIdx = choiceIdx;
+            VoteCount = voteCount;
+            ProxyList = proxyList;
         }
     }
 }

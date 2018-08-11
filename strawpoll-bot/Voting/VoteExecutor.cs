@@ -6,7 +6,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace spb.Voting
+namespace StrawpollBot.Voting
 {
     public class VoteExecutor
     {
